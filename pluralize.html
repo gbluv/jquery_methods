@@ -1,0 +1,27 @@
+<!DOCTYPE>
+<html>
+<head>
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$.extend({
+			pluralize: function(count,singular,plural){
+				return (count == 0 || count > 1) ? plural : singular;
+			}
+		});
+	</script>
+</head>
+<body>
+	
+	<script type="text/javascript">
+	
+		document.write("<br> 0 " + $.pluralize(0,"person","people") + "<br>");
+		document.write("<br> 1 " + $.pluralize(1,"person","people") + "<br>");
+		document.write("<br> 10 " + $.pluralize(10,"person","people") + "<br>");
+		
+	</script>
+	
+	
+</body>
+</html>	
+	
+	
